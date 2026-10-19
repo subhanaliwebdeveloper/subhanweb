@@ -1,0 +1,140 @@
+/* ==========================================================================
+   Responsive Styles
+   Mobile-first adaptations tested at 360px, 768px, 1280px.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Medium Screens (<= 900px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero-image-col {
+    justify-content: flex-start;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet & Mobile Screens (<= 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.25rem;
+    --header-height: 4rem;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .header-actions .btn-sm {
+    display: none;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-6);
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: var(--space-4);
+  }
+
+  .floating-whatsapp {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Mobile Screens (<= 400px - tested at 360px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 400px) {
+  :root {
+    --container-padding: 1rem;
+  }
+
+  .hero-name {
+    font-size: 2.25rem;
+  }
+
+  .hero-image-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .stat-card {
+    padding: var(--space-4);
+  }
+
+  .skill-card {
+    padding: var(--space-4);
+  }
+
+  .service-card {
+    padding: var(--space-4);
+  }
+
+  .form-card {
+    padding: var(--space-4);
+  }
+
+  .project-card-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-links-group {
+    justify-content: space-between;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-actions .btn {
+    width: 100%;
+  }
+}

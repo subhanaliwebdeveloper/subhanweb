@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Design Tokens & CSS Variables
+   Clean, modern, professional portfolio inspired by umairahmad.net.
+   Single accent color (deep blue / royal blue), neutral greys, soft shadows.
+   ========================================================================== */
+
+:root {
+  /* Typography */
+  --font-sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 2rem;       /* 32px */
+  --text-4xl: 2.5rem;     /* 40px */
+  --text-5xl: 3.25rem;    /* 52px */
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --container-max: 1180px;
+  --container-padding: 1.5rem;
+  --header-height: 4.5rem;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+
+  /* Transitions (All under 250ms) */
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+
+  /* Light Theme (Clean modern white and neutral grey with deep royal blue accent) */
+  --bg: #f8fafc;
+  --bg-section-alt: #ffffff;
+  --surface: #ffffff;
+  --surface-hover: #f1f5f9;
+  --text: #1e293b;
+  --text-headings: #0f172a;
+  --text-muted: #64748b;
+  --text-faint: #94a3b8;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* Deep Blue Accent */
+  --accent: #0078ff;
+  --accent-hover: #0060cb;
+  --accent-subtle: #eff6ff;
+  --accent-text: #ffffff;
+
+  --focus-ring: #0078ff;
+  --overlay-bg: rgba(15, 23, 42, 0.65);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-section-alt: #1e293b;
+  --surface: #1e293b;
+  --surface-hover: #334155;
+  --text: #e2e8f0;
+  --text-headings: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  --border: #334155;
+  --border-strong: #475569;
+
+  --accent: #38bdf8;
+  --accent-hover: #0284c7;
+  --accent-subtle: #0c4a6e;
+  --accent-text: #0f172a;
+
+  --focus-ring: #38bdf8;
+  --overlay-bg: rgba(0, 0, 0, 0.8);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
